@@ -21,7 +21,7 @@ jobs:
     - name: Make gigman executable
       run: chmod +x gigman
     - name: create gigman context
-      run: ./gigman context create --userkey ${{secrets.GIGMAN_USERKEY}} --secret ${{secrets.GIGMAN_SECRET}} --name gha
+      run: ./gigman context create --userkey ${{secrets.GIGMAN_USERKEY}} --secret ${{secrets.GIGMAN_SECRET}} --name gha --workspace ${GITHUB_WORKSPACE}
     - name: set gigman context
       run: ./gigman context set --name gha
     - name: Apply gigman
