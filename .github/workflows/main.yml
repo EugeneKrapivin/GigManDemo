@@ -13,6 +13,6 @@ jobs:
     - name: Download a file
       run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148496/gigman.zip -O gigman.zip
     - name: Extract gigman
-      run: 7z x ./gigman/gigman.zip
+      run: 7z x gigman.zip
     - name: apply gigman
       run: ./gigman/gigman site apply 
