@@ -31,4 +31,4 @@ jobs:
     - name: move project1
       run: ls ~/.gigman_workspaces/_sites/
     - name: Apply gigman
-      run: ./gigman site apply -e dev -t 4_w3Fkcyzxrm8LtXsO9J3X9g
+      run: ./gigman site apply -s GigManDemo -e dev -t 4_w3Fkcyzxrm8LtXsO9J3X9g
