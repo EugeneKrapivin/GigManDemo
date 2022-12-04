@@ -1,0 +1,42 @@
+{
+  "resource": {
+    "baseDomain": "demo.com",
+    "dataCenter": "us1",
+    "trustedSiteURLs": [
+      "demo.com/*",
+      "*.demo.com/*"
+    ],
+    "tags": [
+      "dev"
+    ],
+    "description": "",
+    "captchaProvider": "Google",
+    "settings": {
+      "CNAME": "",
+      "shortURLDomain": "",
+      "shortURLRedirMethod": "js",
+      "encryptPII": true
+    },
+    "trustedShareURLs": [
+      "bit.ly/*",
+      "fw.to/*",
+      "shr.gs/*",
+      "vst.to/*",
+      "socli.ru/*",
+      "s.gigya-api.cn/*"
+    ],
+    "enableDataSharing": true,
+    "isCDP": false,
+    "invisibleRecaptcha": {
+      "SiteKey": null,
+      "Secret": null
+    },
+    "recaptchaV2": {
+      "SiteKey": null,
+      "Secret": null
+    },
+    "funCaptcha": {},
+    "customAPIDomainPrefix": ""
+  },
+  "inheritFrom": null
+}

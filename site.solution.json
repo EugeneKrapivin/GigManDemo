@@ -1,0 +1,10 @@
+{
+  "id": "b3727372-a65b-41fc-8491-e756a38faec0",
+  "name": "CDCBrandDemo",
+  "version": 1,
+  "isTemplate": false,
+  "inheritFrom": null,
+  "environments": {
+    "dev": "/Users/i347151/.gigman_workspaces/_sites/CDCBrandDemo/dev"
+  }
+}

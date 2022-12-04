@@ -1,0 +1,9 @@
+{
+  "inheritFrom": null,
+  "schemas": {
+    "data": "/Users/i347151/.gigman_workspaces/_sites/CDCBrandDemo/dev/accounts_schemas/schema.data.json",
+    "profile": "/Users/i347151/.gigman_workspaces/_sites/CDCBrandDemo/dev/accounts_schemas/schema.profile.json",
+    "subscriptions": "/Users/i347151/.gigman_workspaces/_sites/CDCBrandDemo/dev/accounts_schemas/schema.subscriptions.json",
+    "preferences": "/Users/i347151/.gigman_workspaces/_sites/CDCBrandDemo/dev/accounts_schemas/schema.preferences.json"
+  }
+}

@@ -1,0 +1,10 @@
+{
+  "fields": {
+    "terms": {
+      "required": false,
+      "type": "string",
+      "writeAccess": "clientModify"
+    }
+  },
+  "$schema": "https://gist.githubusercontent.com/EugeneKrapivin/a8adfe1bbac7b0bf80497a456ea91822/raw/dd1fc214c4482c3fe99afcb5e376cf8e83a60123/schema.data.json"
+}
