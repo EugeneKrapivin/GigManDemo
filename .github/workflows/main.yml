@@ -4,7 +4,6 @@ on:
   workflow_dispatch:
   push:
     branches: [ "dev" ]
-
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -16,5 +15,9 @@ jobs:
       run: 7z x gigman.zip
     - name: Make gigman executable
       run: chmod +x gigman
+    - name: create gigman context
+      run: ./gigman context create -u ${{secrets.GIGMAN_USERKEY}} -s ${{secrets.GIGMAN_SECRET}} -n gha
+    - name: set gigman context
+      run: ./gigman context set -n gha
     - name: Apply gigman
       run: ./gigman site apply 
