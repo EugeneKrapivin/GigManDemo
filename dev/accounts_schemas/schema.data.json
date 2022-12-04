@@ -1,6 +1,36 @@
 {
   "fields": {
+    "favoriteColor": {
+      "required": false,
+      "type": "string",
+      "writeAccess": "serverOnly"
+    },
+    "pantsSize": {
+      "required": false,
+      "type": "integer",
+      "writeAccess": "clientCreate"
+    },
+    "prefferedJeanstType": {
+      "required": false,
+      "type": "string",
+      "writeAccess": "clientModify"
+    },
     "terms": {
+      "required": false,
+      "type": "string",
+      "writeAccess": "clientModify"
+    },
+    "prefferredBrand": {
+      "required": false,
+      "type": "string",
+      "writeAccess": "clientModify"
+    },
+    "shoeSize": {
+      "required": false,
+      "type": "integer",
+      "writeAccess": "clientCreate"
+    },
+    "shirtSize": {
       "required": false,
       "type": "string",
       "writeAccess": "clientModify"
