@@ -1,0 +1,20 @@
+{
+  "screenSetId": "Default-LiteRegistration",
+  "translations": {
+    "default": {
+      "CHECKBOX_23747318366892016_LABEL": "Weekly Newsletter",
+      "HEADER_115341122219738720_LABEL": "Sign up for our newsletter",
+      "LABEL_10782287025984824_LABEL": "\u003Clabel class=\u0022gigya-label-text\u0022\u003EBy subscribing I agree to the \u003Ca class=\u0022gigya-terms-of-use\u0022 href=\u0022#\u0022\u003ETerms of Use\u003C/a\u003E\u003C/label\u003E",
+      "GIGYA_SUBSCRIBE_WITH_EMAIL_SCREEN_CAPTION": "Subscribe with email",
+      "SUBMIT_8528365233759930_VALUE": "Sign up",
+      "TEXTBOX_11732118875291136_PLACEHOLDER": "Email",
+      "TEXTBOX_40161500768779070_PLACEHOLDER": "First name",
+      "TEXTBOX_9112499838793728_PLACEHOLDER": "Last name",
+      "LABEL_108445338318504780_LABEL": "\u003Cp\u003EThank you for subscribing!\u003C/p\u003E\n \u003Cp\u003EWe\u0027ll be in touch.\u003C/p\u003E",
+      "LINK_27881194033483156_LABEL": "\u003Cinput type=\u0022button\u0022 class=\u0022gigya-button\u0022 value=\u0022OK\u0022 tabindex=\u00220\u0022\u003E",
+      "GIGYA_SUBSCRIBE_THANK_YOU_SCREEN_CAPTION": "Thank you"
+    }
+  },
+  "rawTranslations": "",
+  "compressionType": 1
+}
