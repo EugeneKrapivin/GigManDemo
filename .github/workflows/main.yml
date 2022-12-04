@@ -25,4 +25,4 @@ jobs:
     - name: set gigman context
       run: ./gigman context set --name gha
     - name: Apply gigman
-      run: ./gigman site apply -e dev -t 4_w3Fkcyzxrm8LtXsO9J3X9g
+      run: ./gigman site apply -s ${GITHUB_WORKSPACE} -e dev -t 4_w3Fkcyzxrm8LtXsO9J3X9g
