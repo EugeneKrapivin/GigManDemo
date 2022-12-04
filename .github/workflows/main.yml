@@ -10,9 +10,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v2
-    - name: Download a file
+    - name: Download gigman
       run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148496/gigman.zip -O gigman.zip
     - name: Extract gigman
       run: 7z x gigman.zip
-    - name: apply gigman
+    - name: Make gigman executable
+      run: chmod +x gigman
+    - name: Apply gigman
       run: ./gigman site apply 
