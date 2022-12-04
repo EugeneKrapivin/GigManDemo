@@ -14,7 +14,7 @@ jobs:
         dotnet-version:
           7.0.x
     - name: Download gigman
-      run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148670/gigman.zip -O gigman.zip
+      run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148775/gigman.zip -O gigman.zip
     - name: Extract gigman
       run: 7z x gigman.zip
     - name: Make gigman executable
