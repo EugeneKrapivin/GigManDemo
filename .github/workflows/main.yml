@@ -1,0 +1,21 @@
+name: deploy dev to stg
+
+on:
+  push:
+    branches: [ "staging" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v2
+    - uses: suisei-cn/actions-download-file@v1.3.0
+      id: downloadfile  # Remember to give an ID if you need the output
+      name: download-gigman
+      with:
+        url: "https://github.com/EugeneKrapivin/gigman.cli/files/10148496/gigman.zip"
+        target: gigman/
+    - name: Extract gigman
+      run: 7z x ./gigman/gigman.zip
+    - name: apply gigman
+      run: ./gigman/gigman site apply 
