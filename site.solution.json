@@ -5,6 +5,6 @@
   "isTemplate": false,
   "inheritFrom": null,
   "environments": {
-    "dev": "/Users/i347151/.gigman_workspaces/_sites/CDCBrandDemo/dev"
+    "dev": "~/.gigman_workspaces/_sites/GigManDemo/dev"
   }
 }
