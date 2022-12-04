@@ -15,4 +15,4 @@ jobs:
     - name: Extract gigman
       run: 7z x gigman.zip
     - name: apply gigman
-      run: gigman site apply 
+      run: ./gigman site apply 
