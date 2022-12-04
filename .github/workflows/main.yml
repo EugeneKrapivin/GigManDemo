@@ -17,7 +17,7 @@ jobs:
     - name: Download gigman
       run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148670/gigman.zip -O gigman.zip
     - name: Extract gigman
-      run: 7z x gigman.zip
+      run: 7z x gigman.zip -aoa	
     - name: Make gigman executable
       run: chmod +x gigman
     - name: create gigman context
