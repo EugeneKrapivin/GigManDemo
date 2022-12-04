@@ -8,6 +8,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+    - uses: actions/checkout@v2
     - name: Setup dotnet
       uses: actions/setup-dotnet@v3
       with:
@@ -23,7 +24,6 @@ jobs:
       run: ./gigman context create --userkey ${{secrets.GIGMAN_USERKEY}} --secret ${{secrets.GIGMAN_SECRET}} --name gha
     - name: set gigman context
       run: ./gigman context set --name gha
-    - uses: actions/checkout@v2
     - name: create gigman workspace
       run: mkdir ~/.gigman_workspaces/_sites
     - name: move project
