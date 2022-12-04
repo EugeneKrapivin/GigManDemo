@@ -27,6 +27,6 @@ jobs:
     - name: create gigman workspace
       run: mkdir ~/.gigman_workspaces/_sites
     - name: move project
-      run: cp /home/runner/work/GigManDemo ~/.gigman_workspaces/_sites/
+      run: cp -r /home/runner/work/GigManDemo ~/.gigman_workspaces/_sites/
     - name: Apply gigman
       run: ./gigman site apply -e dev -t 4_w3Fkcyzxrm8LtXsO9J3X9g
