@@ -3,7 +3,7 @@ name: deploy dev to stg
 on:
   workflow_dispatch:
   push:
-    branches: [ "staging" ]
+    branches: [ "dev" ]
 
 jobs:
   build:
@@ -11,7 +11,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Download a file
-      run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148496/gigman.zip -O gigman/        
+      run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148496/gigman.zip -O gigman/gigman.zip
     - name: Extract gigman
       run: 7z x ./gigman/gigman.zip
     - name: apply gigman
