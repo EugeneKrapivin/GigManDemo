@@ -8,14 +8,13 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
     - name: Setup dotnet
       uses: actions/setup-dotnet@v3
       with:
         dotnet-version:
           7.0.x
     - name: Download gigman
-      run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148775/gigman.zip -O gigman.zip
+      run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148670/gigman.zip -O gigman.zip
     - name: Extract gigman
       run: 7z x gigman.zip
     - name: Make gigman executable
@@ -24,5 +23,10 @@ jobs:
       run: ./gigman context create --userkey ${{secrets.GIGMAN_USERKEY}} --secret ${{secrets.GIGMAN_SECRET}} --name gha
     - name: set gigman context
       run: ./gigman context set --name gha
+    - uses: actions/checkout@v2
+    - name: create gigman workspace
+      run: mkdir ~/.gigman_workspaces/_sites
+    - name: move project
+      run: cp -r ${GITHUB_WORKSPACE} ~/.gigman_workspaces/_sites/
     - name: Apply gigman
-      run: ./gigman site apply -s ${GITHUB_WORKSPACE} -e dev -t 4_w3Fkcyzxrm8LtXsO9J3X9g
+      run: ./gigman site apply -e dev -t 4_w3Fkcyzxrm8LtXsO9J3X9g
