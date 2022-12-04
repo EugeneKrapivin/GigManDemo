@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: Download gigman
-      run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148496/gigman.zip -O gigman.zip
+      run: wget https://github.com/EugeneKrapivin/gigman.cli/files/10148596/gigman.zip -O gigman.zip
     - name: Extract gigman
       run: 7z x gigman.zip
     - name: Make gigman executable
@@ -20,4 +20,4 @@ jobs:
     - name: set gigman context
       run: ./gigman context set -n gha
     - name: Apply gigman
-      run: ./gigman site apply 
+      run: ./gigman site apply -e dev -t blablabla
