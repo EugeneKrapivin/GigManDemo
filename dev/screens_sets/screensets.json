@@ -1,4 +1,13 @@
 {
   "inheritFrom": null,
-  "screenSets": []
+  "screenSets": [
+    "Default-LinkAccounts",
+    "Default-LiteRegistration",
+    "Default-OrganizationRegistration",
+    "Default-PasswordlessLogin",
+    "Default-ProfileUpdate",
+    "Default-ReAuthentication",
+    "Default-RegistrationLogin",
+    "Default-Subscriptions"
+  ]
 }
